@@ -1,0 +1,44 @@
+"replace-field" : {
+	"name":"id",
+	"type":"string",
+	"indexed":"true",
+	"stored":"true",
+	"required":"true"
+}
+・記事のURLを扱うフィールド．URLはインデキシング対象のデータを一意に定めることができることができるためユニークキーとする．ユニークキーはindexedとstoredは必ずtrueである必要があるため，このように設定．
+
+"add-field" : {
+	"name":"jour_date",
+	"type":"date",
+	"indexed":"true",
+	"stored":"true",
+	"required":"false"
+}
+・記事の日付を扱うフィールド．特定の期間で絞って検索するためフィールドタイプはdateを指定．検索可能なフィールドであり，検索結果に分解せずオリジナルのまま表示したいため，indexedとstoredをtrueに設定．
+
+"add-field" : {
+	"name":"jour_title",
+	"type":"text_ja",
+	"indexed":"true",
+	"stored":"true",
+	"required":"false"
+}
+・記事のタイトルを扱うフィールド．タイトルは全文検索の対象であり，文章で出現している単語でヒットさせられるようにアナライザが定義されているフィールドタイプであり，形態素解析も定義されているtext_jaを指定．検索可能なフィールドであり，検索結果に分解せずオリジナルのまま表示したいため，indexedとstoredをtrueに設定．
+
+"add-field" : {
+	"name":"jour_text",
+	"type":"text_ja",
+	"indexed":"true",
+	"stored":"true",
+	"required":"false"
+}
+・記事の本文を扱うフィールド．本文は全文検索の対象であり，文章で出現している単語でヒットさせられるようにアナライザが定義されているフィールドタイプであり，形態素解析も定義されているtext_jaを指定．検索可能なフィールドであり，検索結果に分解せずオリジナルのまま表示したいため，indexedとstoredをtrueに設定．
+
+"add-field" : {
+	"name":"jour_category",
+	"type":"string",
+	"indexed":"false",
+	"stored":"true",
+	"required":"false"
+}
+・記事のカテゴリを扱うフィールド．今回は全文検索の対象では無く，分類表示に用いるだけのため，フィールドタイプはstringを指定．また，上記の理由で検索可能なフィールドである必要はないが，検索結果に分解せずオリジナルのまま表示したいため，indexedはfalse，storedはtrueに設定．

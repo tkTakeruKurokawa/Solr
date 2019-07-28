@@ -1,0 +1,492 @@
+2019-07-26 19:00:00.277 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.14.v20161028
+2019-07-26 19:00:00.638 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.6.6
+2019-07-26 19:00:00.638 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2019-07-26 19:00:00.639 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/Takeru/Google Drive/授業資料/プログラム/Solr/solr-6.6.6
+2019-07-26 19:00:00.651 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-07-26T19:00:00.640Z
+2019-07-26 19:00:00.651 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2019-07-26 19:00:00.661 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /Users/Takeru/Google Drive/授業資料/プログラム/Solr/solr-6.6.6/server/solr
+2019-07-26 19:00:00.668 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/Takeru/Google Drive/授業資料/プログラム/Solr/solr-6.6.6/server/solr/solr.xml
+2019-07-26 19:00:00.764 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2019-07-26 19:00:00.931 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2019-07-26 19:00:01.218 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /Users/Takeru/Google Drive/授業資料/プログラム/Solr/solr-6.6.6/server/solr
+2019-07-26 19:00:01.220 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [ldcc]
+2019-07-26 19:00:01.223 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2019-07-26 19:00:01.276 INFO  (coreLoadExecutor-6-thread-1) [   x:ldcc] o.a.s.c.SolrResourceLoader [ldcc] Added 53 libs to classloader, from paths: [/Users/Takeru/Google%20Drive/%E6%8E%88%E6%A5%AD%E8%B3%87%E6%96%99/%E3%83%95%E3%82%9A%E3%83%AD%E3%82%AF%E3%82%99%E3%83%A9%E3%83%A0/Solr/solr-6.6.6/contrib/clustering/lib, /Users/Takeru/Google%20Drive/%E6%8E%88%E6%A5%AD%E8%B3%87%E6%96%99/%E3%83%95%E3%82%9A%E3%83%AD%E3%82%AF%E3%82%99%E3%83%A9%E3%83%A0/Solr/solr-6.6.6/contrib/extraction/lib, /Users/Takeru/Google%20Drive/%E6%8E%88%E6%A5%AD%E8%B3%87%E6%96%99/%E3%83%95%E3%82%9A%E3%83%AD%E3%82%AF%E3%82%99%E3%83%A9%E3%83%A0/Solr/solr-6.6.6/contrib/langid/lib, /Users/Takeru/Google%20Drive/%E6%8E%88%E6%A5%AD%E8%B3%87%E6%96%99/%E3%83%95%E3%82%9A%E3%83%AD%E3%82%AF%E3%82%99%E3%83%A9%E3%83%A0/Solr/solr-6.6.6/contrib/velocity/lib, /Users/Takeru/Google%20Drive/%E6%8E%88%E6%A5%AD%E8%B3%87%E6%96%99/%E3%83%95%E3%82%9A%E3%83%AD%E3%82%AF%E3%82%99%E3%83%A9%E3%83%A0/Solr/solr-6.6.6/dist]
+2019-07-26 19:00:01.326 INFO  (main) [   ] o.e.j.s.Server Started @1691ms
+2019-07-26 19:00:01.717 INFO  (coreLoadExecutor-6-thread-1) [   x:ldcc] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.6.6
+2019-07-26 19:00:01.871 INFO  (coreLoadExecutor-6-thread-1) [   x:ldcc] o.a.s.s.IndexSchema [ldcc] Schema name=example-basic
+2019-07-26 19:00:02.322 INFO  (coreLoadExecutor-6-thread-1) [   x:ldcc] o.a.s.s.IndexSchema Loaded schema example-basic/1.6 with uniqueid field id
+2019-07-26 19:00:02.363 INFO  (coreLoadExecutor-6-thread-1) [   x:ldcc] o.a.s.c.CoreContainer Creating SolrCore 'ldcc' using configuration from instancedir /Users/Takeru/Google Drive/授業資料/プログラム/Solr/solr-6.6.6/server/solr/ldcc, trusted=true
+2019-07-26 19:00:02.388 INFO  (coreLoadExecutor-6-thread-1) [   x:ldcc] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2019-07-26 19:00:02.392 INFO  (coreLoadExecutor-6-thread-1) [   x:ldcc] o.a.s.c.SolrCore [[ldcc] ] Opening new SolrCore at [/Users/Takeru/Google Drive/授業資料/プログラム/Solr/solr-6.6.6/server/solr/ldcc], dataDir=[/Users/Takeru/Google Drive/授業資料/プログラム/Solr/solr-6.6.6/server/solr/ldcc/data/]
+2019-07-26 19:00:02.433 INFO  (coreLoadExecutor-6-thread-1) [   x:ldcc] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-07-26 19:00:02.658 INFO  (coreLoadExecutor-6-thread-1) [   x:ldcc] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2019-07-26 19:00:02.658 INFO  (coreLoadExecutor-6-thread-1) [   x:ldcc] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2019-07-26 19:00:02.664 INFO  (coreLoadExecutor-6-thread-1) [   x:ldcc] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2019-07-26 19:00:02.665 INFO  (coreLoadExecutor-6-thread-1) [   x:ldcc] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-07-26 19:00:02.709 INFO  (coreLoadExecutor-6-thread-1) [   x:ldcc] o.a.s.s.SolrIndexSearcher Opening [Searcher@72cab384[ldcc] main]
+2019-07-26 19:00:02.718 INFO  (coreLoadExecutor-6-thread-1) [   x:ldcc] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/Takeru/Google Drive/授業資料/プログラム/Solr/solr-6.6.6/server/solr/ldcc/conf
+2019-07-26 19:00:02.731 INFO  (coreLoadExecutor-6-thread-1) [   x:ldcc] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-07-26 19:00:02.736 INFO  (coreLoadExecutor-6-thread-1) [   x:ldcc] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-07-26 19:00:02.738 INFO  (coreLoadExecutor-6-thread-1) [   x:ldcc] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /Users/Takeru/Google Drive/授業資料/プログラム/Solr/solr-6.6.6/server/solr/ldcc/conf/elevate.xml
+2019-07-26 19:00:02.748 INFO  (coreLoadExecutor-6-thread-1) [   x:ldcc] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2019-07-26 19:00:02.778 INFO  (searcherExecutor-7-thread-1-processing-x:ldcc) [   x:ldcc] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@72cab384[ldcc] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2019-07-26 19:00:02.778 INFO  (searcherExecutor-7-thread-1-processing-x:ldcc) [   x:ldcc] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-07-26 19:00:02.778 INFO  (searcherExecutor-7-thread-1-processing-x:ldcc) [   x:ldcc] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2019-07-26 19:00:02.779 INFO  (searcherExecutor-7-thread-1-processing-x:ldcc) [   x:ldcc] o.a.s.c.SolrCore [ldcc] Registered new searcher Searcher@72cab384[ldcc] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2019-07-26 19:00:02.782 INFO  (coreLoadExecutor-6-thread-1) [   x:ldcc] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1640148608254738432
+2019-07-26 19:00:21.221 INFO  (qtp1690716179-16) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/replication params={wt=json&command=details&_=1564167621193} status=0 QTime=4
+2019-07-26 19:00:21.222 INFO  (qtp1690716179-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1564167567210} status=0 QTime=13
+2019-07-26 19:00:21.296 INFO  (qtp1690716179-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1564167567210} status=0 QTime=85
+2019-07-26 19:00:22.102 INFO  (qtp1690716179-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1564167567210} status=0 QTime=0
+2019-07-26 19:00:22.118 INFO  (qtp1690716179-16) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/config params={wt=json&_=1564167567259} status=0 QTime=3
+2019-07-26 19:00:22.119 INFO  (qtp1690716179-15) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1564167567258} status=0 QTime=11
+2019-07-26 19:00:22.175 INFO  (qtp1690716179-14) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1564167567258} status=0 QTime=0
+2019-07-26 19:00:22.205 INFO  (qtp1690716179-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1564167567210} status=0 QTime=96
+2019-07-26 19:00:26.841 INFO  (qtp1690716179-21) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/schema params={} status=0 QTime=8
+2019-07-26 19:00:41.916 INFO  (qtp1690716179-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1564167567210} status=0 QTime=0
+2019-07-26 19:00:41.923 INFO  (qtp1690716179-14) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/config params={wt=json&_=1564167567259} status=0 QTime=3
+2019-07-26 19:00:41.926 INFO  (qtp1690716179-15) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1564167567258} status=0 QTime=5
+2019-07-26 19:00:41.972 INFO  (qtp1690716179-16) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1564167567258} status=0 QTime=0
+2019-07-26 19:00:42.015 INFO  (qtp1690716179-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1564167567210} status=0 QTime=98
+2019-07-27 17:30:07.343 INFO  (qtp1690716179-12) [   x:ldcc] o.a.s.u.p.LogUpdateProcessorFactory [ldcc]  webapp=/solr path=/update/json/docs params={}{} 0 297
+2019-07-27 17:30:07.351 ERROR (qtp1690716179-12) [   x:ldcc] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Invalid Date String:'2011-10-30T10:15:00+0900'
+	at org.apache.solr.util.DateMathParser.parseMath(DateMathParser.java:234)
+	at org.apache.solr.schema.TrieField.createField(TrieField.java:644)
+	at org.apache.solr.schema.TrieField.createFields(TrieField.java:659)
+	at org.apache.solr.update.DocumentBuilder.addField(DocumentBuilder.java:72)
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:179)
+	at org.apache.solr.update.AddUpdateCommand.getLuceneDocument(AddUpdateCommand.java:102)
+	at org.apache.solr.update.DirectUpdateHandler2.updateDocument(DirectUpdateHandler2.java:922)
+	at org.apache.solr.update.DirectUpdateHandler2.updateDocOrDocValues(DirectUpdateHandler2.java:913)
+	at org.apache.solr.update.DirectUpdateHandler2.doNormalUpdate(DirectUpdateHandler2.java:302)
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc0(DirectUpdateHandler2.java:239)
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc(DirectUpdateHandler2.java:194)
+	at org.apache.solr.update.processor.RunUpdateProcessor.processAdd(RunUpdateProcessorFactory.java:67)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.doLocalAdd(DistributedUpdateProcessor.java:979)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:1192)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:748)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader$1.handle(JsonLoader.java:239)
+	at org.apache.solr.common.util.JsonRecordReader$Node.handleObjectStart(JsonRecordReader.java:379)
+	at org.apache.solr.common.util.JsonRecordReader$Node.parse(JsonRecordReader.java:297)
+	at org.apache.solr.common.util.JsonRecordReader$Node.access$200(JsonRecordReader.java:155)
+	at org.apache.solr.common.util.JsonRecordReader.streamRecords(JsonRecordReader.java:140)
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.handleSplitMode(JsonLoader.java:219)
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.processUpdate(JsonLoader.java:136)
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.load(JsonLoader.java:121)
+	at org.apache.solr.handler.loader.JsonLoader.load(JsonLoader.java:84)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:68)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:724)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:530)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+
+2019-07-27 17:30:09.045 INFO  (qtp1690716179-15) [   x:ldcc] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-07-27 17:30:09.047 INFO  (qtp1690716179-15) [   x:ldcc] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
+2019-07-27 17:30:09.053 INFO  (qtp1690716179-15) [   x:ldcc] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-07-27 17:30:09.054 INFO  (qtp1690716179-15) [   x:ldcc] o.a.s.u.p.LogUpdateProcessorFactory [ldcc]  webapp=/solr path=/update params={commit=true}{commit=} 0 13
+2019-07-27 17:30:35.069 INFO  (qtp1690716179-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1564167567210} status=0 QTime=3
+2019-07-27 17:30:35.086 INFO  (qtp1690716179-21) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1564167567258} status=0 QTime=3
+2019-07-27 17:30:35.088 INFO  (qtp1690716179-20) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/replication params={wt=json&command=details&_=1564167621193} status=0 QTime=3
+2019-07-27 17:30:35.095 INFO  (qtp1690716179-14) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1564167567210&ts=1564167567210} status=503 QTime=4
+2019-07-27 17:30:35.235 INFO  (qtp1690716179-12) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/system params={wt=json&_=1564248635035} status=0 QTime=162
+2019-07-27 17:30:35.235 INFO  (qtp1690716179-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1564167567210} status=0 QTime=166
+2019-07-27 17:30:37.459 INFO  (qtp1690716179-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1564167567210} status=0 QTime=0
+2019-07-27 17:30:37.481 INFO  (qtp1690716179-21) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1564248637438} status=0 QTime=14
+2019-07-27 17:30:37.536 INFO  (qtp1690716179-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1564167567210} status=0 QTime=0
+2019-07-27 17:30:37.540 INFO  (qtp1690716179-14) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1564248637438} status=0 QTime=0
+2019-07-27 17:30:37.559 INFO  (qtp1690716179-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1564167567210} status=0 QTime=90
+2019-07-27 17:30:40.141 INFO  (qtp1690716179-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1564167567210} status=0 QTime=1
+2019-07-27 17:30:40.161 INFO  (qtp1690716179-15) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1564167567258} status=0 QTime=14
+2019-07-27 17:30:40.182 INFO  (qtp1690716179-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1564167567210} status=0 QTime=41
+2019-07-27 17:30:44.769 INFO  (qtp1690716179-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1564167567210} status=0 QTime=0
+2019-07-27 17:30:44.779 INFO  (qtp1690716179-13) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/file params={wt=json&_=1564248644763} status=0 QTime=7
+2019-07-27 17:30:44.810 INFO  (qtp1690716179-17) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1564248644763} status=0 QTime=6
+2019-07-27 17:30:44.888 INFO  (qtp1690716179-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1564167567210} status=0 QTime=118
+2019-07-27 17:30:50.844 INFO  (qtp1690716179-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1564167567210} status=0 QTime=0
+2019-07-27 17:30:50.845 INFO  (qtp1690716179-20) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/replication params={wt=json&command=details&_=1564167621193} status=0 QTime=0
+2019-07-27 17:30:50.845 INFO  (qtp1690716179-17) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1564167567258} status=0 QTime=0
+2019-07-27 17:30:50.854 INFO  (qtp1690716179-14) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1564167567210&ts=1564167567210} status=503 QTime=0
+2019-07-27 17:30:50.891 INFO  (qtp1690716179-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1564167567210} status=0 QTime=47
+2019-07-27 17:30:50.891 INFO  (qtp1690716179-13) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/system params={wt=json&_=1564248635035} status=0 QTime=36
+2019-07-27 17:31:38.779 INFO  (qtp1690716179-18) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1564157620570} hits=0 status=0 QTime=53
+2019-07-27 17:32:39.326 INFO  (qtp1690716179-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1564157620457} status=0 QTime=0
+2019-07-27 17:32:39.331 INFO  (qtp1690716179-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1564158284199&since=0} status=0 QTime=3
+2019-07-27 17:32:39.424 INFO  (qtp1690716179-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1564157620457} status=0 QTime=97
+2019-07-27 17:32:49.319 INFO  (qtp1690716179-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1564158284199&since=0} status=0 QTime=1
+2019-07-27 17:32:59.319 INFO  (qtp1690716179-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1564158284199&since=0} status=0 QTime=0
+2019-07-27 17:33:01.023 INFO  (qtp1690716179-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1564157620457} status=0 QTime=0
+2019-07-27 17:33:01.029 INFO  (qtp1690716179-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1564157620457} status=0 QTime=3
+2019-07-27 17:33:01.063 INFO  (qtp1690716179-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1564157620457} status=0 QTime=0
+2019-07-27 17:33:01.066 INFO  (qtp1690716179-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1564157620457} status=0 QTime=0
+2019-07-27 17:33:01.080 INFO  (qtp1690716179-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1564157620457} status=0 QTime=56
+2019-07-27 17:33:04.309 INFO  (qtp1690716179-16) [   ] o.a.s.c.SolrResourceLoader [ldcc] Added 53 libs to classloader, from paths: [/Users/Takeru/Google%20Drive/%E6%8E%88%E6%A5%AD%E8%B3%87%E6%96%99/%E3%83%95%E3%82%9A%E3%83%AD%E3%82%AF%E3%82%99%E3%83%A9%E3%83%A0/Solr/solr-6.6.6/contrib/clustering/lib, /Users/Takeru/Google%20Drive/%E6%8E%88%E6%A5%AD%E8%B3%87%E6%96%99/%E3%83%95%E3%82%9A%E3%83%AD%E3%82%AF%E3%82%99%E3%83%A9%E3%83%A0/Solr/solr-6.6.6/contrib/extraction/lib, /Users/Takeru/Google%20Drive/%E6%8E%88%E6%A5%AD%E8%B3%87%E6%96%99/%E3%83%95%E3%82%9A%E3%83%AD%E3%82%AF%E3%82%99%E3%83%A9%E3%83%A0/Solr/solr-6.6.6/contrib/langid/lib, /Users/Takeru/Google%20Drive/%E6%8E%88%E6%A5%AD%E8%B3%87%E6%96%99/%E3%83%95%E3%82%9A%E3%83%AD%E3%82%AF%E3%82%99%E3%83%A9%E3%83%A0/Solr/solr-6.6.6/contrib/velocity/lib, /Users/Takeru/Google%20Drive/%E6%8E%88%E6%A5%AD%E8%B3%87%E6%96%99/%E3%83%95%E3%82%9A%E3%83%AD%E3%82%AF%E3%82%99%E3%83%A9%E3%83%A0/Solr/solr-6.6.6/dist]
+2019-07-27 17:33:04.381 INFO  (qtp1690716179-16) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.6.6
+2019-07-27 17:33:04.532 INFO  (qtp1690716179-16) [   ] o.a.s.s.IndexSchema [ldcc] Schema name=example-basic
+2019-07-27 17:33:05.226 INFO  (qtp1690716179-16) [   ] o.a.s.s.IndexSchema Loaded schema example-basic/1.6 with uniqueid field id
+2019-07-27 17:33:05.295 INFO  (qtp1690716179-16) [   ] o.a.s.c.CoreContainer Reloading SolrCore 'ldcc' using configuration from instancedir /Users/Takeru/Google Drive/授業資料/プログラム/Solr/solr-6.6.6/server/solr/ldcc
+2019-07-27 17:33:05.296 INFO  (qtp1690716179-16) [   x:ldcc] o.a.s.c.SolrCore [[ldcc] ] Opening new SolrCore at [/Users/Takeru/Google Drive/授業資料/プログラム/Solr/solr-6.6.6/server/solr/ldcc], dataDir=[/Users/Takeru/Google Drive/授業資料/プログラム/Solr/solr-6.6.6/server/solr/ldcc/data/]
+2019-07-27 17:33:05.297 INFO  (qtp1690716179-16) [   x:ldcc] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-07-27 17:33:05.559 INFO  (qtp1690716179-16) [   x:ldcc] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2019-07-27 17:33:05.559 INFO  (qtp1690716179-16) [   x:ldcc] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-07-27 17:33:05.563 INFO  (qtp1690716179-16) [   x:ldcc] o.a.s.s.SolrIndexSearcher Opening [Searcher@42904c88[ldcc] main]
+2019-07-27 17:33:05.564 INFO  (qtp1690716179-16) [   x:ldcc] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/Takeru/Google Drive/授業資料/プログラム/Solr/solr-6.6.6/server/solr/ldcc/conf
+2019-07-27 17:33:05.564 INFO  (qtp1690716179-16) [   x:ldcc] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-07-27 17:33:05.565 INFO  (qtp1690716179-16) [   x:ldcc] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-07-27 17:33:05.565 INFO  (qtp1690716179-16) [   x:ldcc] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /Users/Takeru/Google Drive/授業資料/プログラム/Solr/solr-6.6.6/server/solr/ldcc/conf/elevate.xml
+2019-07-27 17:33:05.571 INFO  (qtp1690716179-16) [   x:ldcc] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2019-07-27 17:33:05.572 INFO  (searcherExecutor-12-thread-1-processing-x:ldcc) [   x:ldcc] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@42904c88[ldcc] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2019-07-27 17:33:05.572 INFO  (searcherExecutor-12-thread-1-processing-x:ldcc) [   x:ldcc] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-07-27 17:33:05.572 INFO  (searcherExecutor-12-thread-1-processing-x:ldcc) [   x:ldcc] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2019-07-27 17:33:05.573 INFO  (searcherExecutor-12-thread-1-processing-x:ldcc) [   x:ldcc] o.a.s.c.SolrCore [ldcc] Registered new searcher Searcher@42904c88[ldcc] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2019-07-27 17:33:05.573 INFO  (qtp1690716179-16) [   x:ldcc] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1640233734580994048
+2019-07-27 17:33:05.580 INFO  (qtp1690716179-16) [   x:ldcc] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2019-07-27 17:33:05.580 INFO  (qtp1690716179-16) [   x:ldcc] o.a.s.s.SolrIndexSearcher Opening [Searcher@16a65088[ldcc] main]
+2019-07-27 17:33:05.581 INFO  (qtp1690716179-16) [   x:ldcc] o.a.s.c.SolrCore [ldcc]  CLOSING SolrCore org.apache.solr.core.SolrCore@2077789c
+2019-07-27 17:33:05.582 INFO  (qtp1690716179-16) [   x:ldcc] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.core.ldcc
+2019-07-27 17:33:05.582 INFO  (qtp1690716179-16) [   x:ldcc] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=ldcc&action=RELOAD&wt=json&_=1564157620457} status=0 QTime=1367
+2019-07-27 17:33:05.584 INFO  (searcherExecutor-12-thread-1-processing-x:ldcc) [   x:ldcc] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@16a65088[ldcc] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2019-07-27 17:33:05.584 INFO  (searcherExecutor-12-thread-1-processing-x:ldcc) [   x:ldcc] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-07-27 17:33:05.584 INFO  (searcherExecutor-12-thread-1-processing-x:ldcc) [   x:ldcc] o.a.s.c.SolrCore [ldcc] Registered new searcher Searcher@16a65088[ldcc] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2019-07-27 17:33:06.602 INFO  (qtp1690716179-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1564157620457} status=0 QTime=0
+2019-07-27 17:33:06.611 INFO  (qtp1690716179-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1564157620457} status=0 QTime=0
+2019-07-27 17:33:06.656 INFO  (qtp1690716179-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1564157620457} status=0 QTime=53
+2019-07-27 17:33:10.645 INFO  (qtp1690716179-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1564157620457} status=0 QTime=0
+2019-07-27 17:33:10.664 INFO  (qtp1690716179-16) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1564158288910} status=0 QTime=0
+2019-07-27 17:33:10.666 INFO  (qtp1690716179-12) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/replication params={wt=json&command=details&_=1564158288910} status=0 QTime=2
+2019-07-27 17:33:10.667 INFO  (qtp1690716179-14) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1564157620457&ts=1564157620457} status=503 QTime=0
+2019-07-27 17:33:10.693 INFO  (qtp1690716179-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1564157620457} status=0 QTime=45
+2019-07-27 17:33:10.693 INFO  (qtp1690716179-18) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/system params={wt=json&_=1564158288910} status=0 QTime=30
+2019-07-27 17:33:14.065 INFO  (qtp1690716179-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1564157620457} status=0 QTime=0
+2019-07-27 17:33:14.101 INFO  (qtp1690716179-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1564157620457} status=0 QTime=34
+2019-07-27 17:33:16.583 INFO  (qtp1690716179-13) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1564157620570} hits=0 status=0 QTime=0
+2019-07-27 17:40:00.428 INFO  (qtp1690716179-18) [   x:ldcc] o.a.s.u.p.LogUpdateProcessorFactory [ldcc]  webapp=/solr path=/update params={commit=true}{} 0 3
+2019-07-27 17:40:00.429 ERROR (qtp1690716179-18) [   x:ldcc] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Invalid Date String:'2011-10-30T10:15:00+0900'
+	at org.apache.solr.util.DateMathParser.parseMath(DateMathParser.java:234)
+	at org.apache.solr.schema.TrieField.createField(TrieField.java:644)
+	at org.apache.solr.schema.TrieField.createFields(TrieField.java:659)
+	at org.apache.solr.update.DocumentBuilder.addField(DocumentBuilder.java:72)
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:179)
+	at org.apache.solr.update.AddUpdateCommand.getLuceneDocument(AddUpdateCommand.java:102)
+	at org.apache.solr.update.DirectUpdateHandler2.updateDocument(DirectUpdateHandler2.java:922)
+	at org.apache.solr.update.DirectUpdateHandler2.updateDocOrDocValues(DirectUpdateHandler2.java:913)
+	at org.apache.solr.update.DirectUpdateHandler2.doNormalUpdate(DirectUpdateHandler2.java:302)
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc0(DirectUpdateHandler2.java:239)
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc(DirectUpdateHandler2.java:194)
+	at org.apache.solr.update.processor.RunUpdateProcessor.processAdd(RunUpdateProcessorFactory.java:67)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.doLocalAdd(DistributedUpdateProcessor.java:979)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:1192)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:748)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.handleAdds(JsonLoader.java:506)
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.processUpdate(JsonLoader.java:145)
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.load(JsonLoader.java:121)
+	at org.apache.solr.handler.loader.JsonLoader.load(JsonLoader.java:84)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:68)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:724)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:530)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+
+2019-07-27 17:49:42.791 INFO  (qtp1690716179-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1564157620457} status=0 QTime=0
+2019-07-27 17:49:42.798 INFO  (qtp1690716179-15) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/config params={wt=json&_=1564158299585} status=0 QTime=1
+2019-07-27 17:49:42.799 INFO  (qtp1690716179-16) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1564158288910} status=0 QTime=1
+2019-07-27 17:49:42.858 INFO  (qtp1690716179-20) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1564158288910} status=0 QTime=3
+2019-07-27 17:49:42.895 INFO  (qtp1690716179-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1564157620457} status=0 QTime=102
+2019-07-27 17:49:44.978 INFO  (qtp1690716179-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1564157620457} status=0 QTime=1
+2019-07-27 17:49:44.989 INFO  (qtp1690716179-21) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1564158288910} status=0 QTime=1
+2019-07-27 17:49:44.989 INFO  (qtp1690716179-14) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/config params={wt=json&_=1564158299585} status=0 QTime=0
+2019-07-27 17:49:45.026 INFO  (qtp1690716179-15) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1564158288910} status=0 QTime=0
+2019-07-27 17:49:45.059 INFO  (qtp1690716179-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1564157620457} status=0 QTime=79
+2019-07-27 17:49:52.122 INFO  (qtp1690716179-20) [   x:ldcc] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /Users/Takeru/Google Drive/授業資料/プログラム/Solr/solr-6.6.6/server/solr/ldcc/conf/managed-schema
+2019-07-27 17:49:52.127 INFO  (qtp1690716179-20) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/schema params={wt=json&_=1564158299584} status=0 QTime=58
+2019-07-27 17:49:53.662 INFO  (qtp1690716179-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1564157620457} status=0 QTime=0
+2019-07-27 17:49:53.676 INFO  (qtp1690716179-13) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/config params={wt=json&_=1564158299585} status=0 QTime=0
+2019-07-27 17:49:53.677 INFO  (qtp1690716179-21) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1564158288910} status=0 QTime=1
+2019-07-27 17:49:53.710 INFO  (qtp1690716179-13) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1564158288910} status=0 QTime=0
+2019-07-27 17:49:53.732 INFO  (qtp1690716179-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1564157620457} status=0 QTime=62
+2019-07-27 17:51:26.561 INFO  (qtp1690716179-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1564157620457} status=0 QTime=2
+2019-07-27 17:51:26.561 INFO  (qtp1690716179-21) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/config params={wt=json&_=1564158299585} status=0 QTime=3
+2019-07-27 17:51:26.565 INFO  (qtp1690716179-18) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1564158288910} status=0 QTime=6
+2019-07-27 17:51:26.594 INFO  (qtp1690716179-16) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1564158288910} status=0 QTime=0
+2019-07-27 17:51:26.660 INFO  (qtp1690716179-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1564157620457} status=0 QTime=101
+2019-07-27 17:51:28.435 INFO  (qtp1690716179-16) [   x:ldcc] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /Users/Takeru/Google Drive/授業資料/プログラム/Solr/solr-6.6.6/server/solr/ldcc/conf/managed-schema
+2019-07-27 17:51:28.438 INFO  (qtp1690716179-16) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/schema params={wt=json&_=1564158299584} status=0 QTime=42
+2019-07-27 17:51:29.985 INFO  (qtp1690716179-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1564157620457} status=0 QTime=0
+2019-07-27 17:51:29.994 INFO  (qtp1690716179-15) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1564158288910} status=0 QTime=1
+2019-07-27 17:51:29.994 INFO  (qtp1690716179-17) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/config params={wt=json&_=1564158299585} status=0 QTime=0
+2019-07-27 17:51:30.020 INFO  (qtp1690716179-18) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1564158288910} status=0 QTime=0
+2019-07-27 17:51:30.021 INFO  (qtp1690716179-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1564157620457} status=0 QTime=33
+2019-07-27 17:51:31.868 INFO  (qtp1690716179-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1564157620457} status=0 QTime=0
+2019-07-27 17:51:31.878 INFO  (qtp1690716179-16) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1564158288910} status=0 QTime=2
+2019-07-27 17:51:31.879 INFO  (qtp1690716179-17) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/config params={wt=json&_=1564158299585} status=0 QTime=0
+2019-07-27 17:51:31.915 INFO  (qtp1690716179-15) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1564158288910} status=0 QTime=0
+2019-07-27 17:51:31.921 INFO  (qtp1690716179-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1564157620457} status=0 QTime=50
+2019-07-27 17:51:33.530 INFO  (qtp1690716179-18) [   x:ldcc] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /Users/Takeru/Google Drive/授業資料/プログラム/Solr/solr-6.6.6/server/solr/ldcc/conf/managed-schema
+2019-07-27 17:51:33.531 INFO  (qtp1690716179-18) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/schema params={wt=json&_=1564158299584} status=0 QTime=28
+2019-07-27 17:51:35.070 INFO  (qtp1690716179-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1564157620457} status=0 QTime=0
+2019-07-27 17:51:35.075 INFO  (qtp1690716179-20) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1564158288910} status=0 QTime=1
+2019-07-27 17:51:35.135 INFO  (qtp1690716179-13) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/config params={wt=json&_=1564158299585} status=0 QTime=0
+2019-07-27 17:51:35.150 INFO  (qtp1690716179-17) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1564158288910} status=0 QTime=0
+2019-07-27 17:51:35.161 INFO  (qtp1690716179-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1564157620457} status=0 QTime=88
+2019-07-27 17:51:36.703 INFO  (qtp1690716179-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1564157620457} status=0 QTime=0
+2019-07-27 17:51:36.715 INFO  (qtp1690716179-21) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1564158288910} status=0 QTime=1
+2019-07-27 17:51:36.716 INFO  (qtp1690716179-14) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/config params={wt=json&_=1564158299585} status=0 QTime=0
+2019-07-27 17:51:36.756 INFO  (qtp1690716179-13) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1564158288910} status=0 QTime=0
+2019-07-27 17:51:36.759 INFO  (qtp1690716179-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1564157620457} status=0 QTime=53
+2019-07-27 17:51:38.733 INFO  (qtp1690716179-20) [   x:ldcc] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /Users/Takeru/Google Drive/授業資料/プログラム/Solr/solr-6.6.6/server/solr/ldcc/conf/managed-schema
+2019-07-27 17:51:38.735 INFO  (qtp1690716179-20) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/schema params={wt=json&_=1564158299584} status=0 QTime=25
+2019-07-27 17:51:40.301 INFO  (qtp1690716179-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1564157620457} status=0 QTime=0
+2019-07-27 17:51:40.305 INFO  (qtp1690716179-17) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1564158288910} status=0 QTime=1
+2019-07-27 17:51:40.309 INFO  (qtp1690716179-14) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/config params={wt=json&_=1564158299585} status=0 QTime=1
+2019-07-27 17:51:40.331 INFO  (qtp1690716179-16) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1564158288910} status=0 QTime=0
+2019-07-27 17:51:40.362 INFO  (qtp1690716179-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1564157620457} status=0 QTime=57
+2019-07-27 17:51:43.438 INFO  (qtp1690716179-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1564157620457} status=0 QTime=0
+2019-07-27 17:51:43.444 INFO  (qtp1690716179-20) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1564158288910} status=0 QTime=0
+2019-07-27 17:51:43.446 INFO  (qtp1690716179-12) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/config params={wt=json&_=1564158299585} status=0 QTime=0
+2019-07-27 17:51:43.475 INFO  (qtp1690716179-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1564157620457} status=0 QTime=31
+2019-07-27 17:51:43.478 INFO  (qtp1690716179-12) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1564158288910} status=0 QTime=0
+2019-07-27 17:51:45.964 INFO  (qtp1690716179-16) [   x:ldcc] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /Users/Takeru/Google Drive/授業資料/プログラム/Solr/solr-6.6.6/server/solr/ldcc/conf/managed-schema
+2019-07-27 17:51:45.965 INFO  (qtp1690716179-16) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/schema params={wt=json&_=1564158299584} status=0 QTime=25
+2019-07-27 17:51:47.500 INFO  (qtp1690716179-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1564157620457} status=0 QTime=0
+2019-07-27 17:51:47.503 INFO  (qtp1690716179-13) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1564158288910} status=0 QTime=0
+2019-07-27 17:51:47.510 INFO  (qtp1690716179-21) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/config params={wt=json&_=1564158299585} status=0 QTime=0
+2019-07-27 17:51:47.526 INFO  (qtp1690716179-12) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1564158288910} status=0 QTime=0
+2019-07-27 17:51:47.546 INFO  (qtp1690716179-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1564157620457} status=0 QTime=44
+2019-07-27 17:53:49.912 ERROR (qtp1690716179-18) [   x:ldcc] o.a.s.h.RequestHandlerBase java.lang.RuntimeException: The JSON must be an Object of the form {"command": {...},...
+	at org.apache.solr.util.CommandOperation.parse(CommandOperation.java:231)
+	at org.apache.solr.api.ApiBag.getCommandOperations(ApiBag.java:293)
+	at org.apache.solr.servlet.HttpSolrCall.getCommands(HttpSolrCall.java:1115)
+	at org.apache.solr.servlet.SolrRequestParsers$1.getCommands(SolrRequestParsers.java:239)
+	at org.apache.solr.schema.SchemaManager.performOperations(SchemaManager.java:76)
+	at org.apache.solr.handler.SchemaHandler.handleRequestBody(SchemaHandler.java:92)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:724)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:530)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+
+2019-07-27 17:53:49.914 INFO  (qtp1690716179-18) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/schema params={} status=500 QTime=3
+2019-07-27 17:53:49.915 ERROR (qtp1690716179-18) [   x:ldcc] o.a.s.s.HttpSolrCall null:java.lang.RuntimeException: The JSON must be an Object of the form {"command": {...},...
+	at org.apache.solr.util.CommandOperation.parse(CommandOperation.java:231)
+	at org.apache.solr.api.ApiBag.getCommandOperations(ApiBag.java:293)
+	at org.apache.solr.servlet.HttpSolrCall.getCommands(HttpSolrCall.java:1115)
+	at org.apache.solr.servlet.SolrRequestParsers$1.getCommands(SolrRequestParsers.java:239)
+	at org.apache.solr.schema.SchemaManager.performOperations(SchemaManager.java:76)
+	at org.apache.solr.handler.SchemaHandler.handleRequestBody(SchemaHandler.java:92)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2477)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:724)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:530)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+
+2019-07-27 17:54:26.747 INFO  (qtp1690716179-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1564157620457} status=0 QTime=0
+2019-07-27 17:54:26.761 INFO  (qtp1690716179-13) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1564158288910} status=0 QTime=4
+2019-07-27 17:54:26.762 INFO  (qtp1690716179-21) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1564157620457&ts=1564157620457} status=503 QTime=1
+2019-07-27 17:54:26.762 INFO  (qtp1690716179-12) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/replication params={wt=json&command=details&_=1564158288910} status=0 QTime=4
+2019-07-27 17:54:26.834 INFO  (qtp1690716179-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1564157620457} status=0 QTime=79
+2019-07-27 17:54:26.834 INFO  (qtp1690716179-14) [   x:ldcc] o.a.s.c.S.Request [ldcc]  webapp=/solr path=/admin/system params={wt=json&_=1564158288910} status=0 QTime=77
+2019-07-27 17:54:32.098 INFO  (qtp1690716179-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1564157620457} status=0 QTime=0
+2019-07-27 17:54:32.103 INFO  (qtp1690716179-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1564157620457} status=0 QTime=0
+2019-07-27 17:54:32.139 INFO  (qtp1690716179-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1564157620457} status=0 QTime=0
+2019-07-27 17:54:32.140 INFO  (qtp1690716179-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1564157620457} status=0 QTime=41
+2019-07-27 17:54:32.144 INFO  (qtp1690716179-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1564157620457} status=0 QTime=0
+2019-07-27 17:54:42.296 INFO  (qtp1690716179-12) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.core.ldcc
+2019-07-27 17:54:42.298 INFO  (qtp1690716179-12) [   ] o.a.s.c.SolrCore [ldcc]  CLOSING SolrCore org.apache.solr.core.SolrCore@32798d27
+2019-07-27 17:54:42.301 INFO  (qtp1690716179-12) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.core.ldcc
+2019-07-27 17:54:42.304 INFO  (qtp1690716179-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=ldcc&action=UNLOAD&wt=json&_=1564157620457} status=0 QTime=10
+2019-07-27 17:54:42.323 INFO  (qtp1690716179-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1564157620457} status=0 QTime=0
+2019-07-27 17:54:42.326 INFO  (qtp1690716179-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1564157620457} status=0 QTime=0
+2019-07-27 17:54:42.357 INFO  (qtp1690716179-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1564157620457} status=0 QTime=32
+2019-07-27 17:56:02.916 INFO  (qtp1690716179-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=37
+2019-07-27 17:56:02.944 INFO  (qtp1690716179-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=ldcc&action=STATUS&wt=json} status=0 QTime=0
+2019-07-27 17:56:02.947 INFO  (qtp1690716179-16) [   ] o.a.s.h.a.CoreAdminOperation core create command name=ldcc&action=CREATE&instanceDir=ldcc&wt=json
+2019-07-27 17:56:02.973 INFO  (qtp1690716179-16) [   x:ldcc] o.a.s.c.SolrResourceLoader [ldcc] Added 53 libs to classloader, from paths: [/Users/Takeru/Google%20Drive/%E6%8E%88%E6%A5%AD%E8%B3%87%E6%96%99/%E3%83%95%E3%82%9A%E3%83%AD%E3%82%AF%E3%82%99%E3%83%A9%E3%83%A0/Solr/solr-6.6.6/contrib/clustering/lib, /Users/Takeru/Google%20Drive/%E6%8E%88%E6%A5%AD%E8%B3%87%E6%96%99/%E3%83%95%E3%82%9A%E3%83%AD%E3%82%AF%E3%82%99%E3%83%A9%E3%83%A0/Solr/solr-6.6.6/contrib/extraction/lib, /Users/Takeru/Google%20Drive/%E6%8E%88%E6%A5%AD%E8%B3%87%E6%96%99/%E3%83%95%E3%82%9A%E3%83%AD%E3%82%AF%E3%82%99%E3%83%A9%E3%83%A0/Solr/solr-6.6.6/contrib/langid/lib, /Users/Takeru/Google%20Drive/%E6%8E%88%E6%A5%AD%E8%B3%87%E6%96%99/%E3%83%95%E3%82%9A%E3%83%AD%E3%82%AF%E3%82%99%E3%83%A9%E3%83%A0/Solr/solr-6.6.6/contrib/velocity/lib, /Users/Takeru/Google%20Drive/%E6%8E%88%E6%A5%AD%E8%B3%87%E6%96%99/%E3%83%95%E3%82%9A%E3%83%AD%E3%82%AF%E3%82%99%E3%83%A9%E3%83%A0/Solr/solr-6.6.6/dist]
+2019-07-27 17:56:03.023 INFO  (qtp1690716179-16) [   x:ldcc] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.6.6
+2019-07-27 17:56:03.096 INFO  (qtp1690716179-16) [   x:ldcc] o.a.s.s.IndexSchema [ldcc] Schema name=example-basic
+2019-07-27 17:56:03.318 ERROR (qtp1690716179-16) [   x:ldcc] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error CREATEing SolrCore 'ldcc': Unable to create core [ldcc] Caused by: unknown field 'id'
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:900)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:91)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:384)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:388)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:174)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:173)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdmin(HttpSolrCall.java:749)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:730)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:510)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:361)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:305)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1691)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Unable to create core [ldcc]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:966)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:863)
+	... 37 more
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core ldcc: Can't load schema /Users/Takeru/Google Drive/授業資料/プログラム/Solr/solr-6.6.6/server/solr/ldcc/conf/managed-schema: unknown field 'id'
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:97)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:946)
+	... 38 more
+Caused by: org.apache.solr.common.SolrException: Can't load schema /Users/Takeru/Google Drive/授業資料/プログラム/Solr/solr-6.6.6/server/solr/ldcc/conf/managed-schema: unknown field 'id'
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:612)
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:182)
+	at org.apache.solr.schema.ManagedIndexSchema.<init>(ManagedIndexSchema.java:104)
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:173)
+	at org.apache.solr.schema.ManagedIndexSchemaFactory.create(ManagedIndexSchemaFactory.java:45)
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:75)
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:119)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:92)
+	... 39 more
+Caused by: java.lang.RuntimeException: unknown field 'id'
+	at org.apache.solr.schema.IndexSchema.getIndexedField(IndexSchema.java:358)
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:569)
+	... 46 more
+
+2019-07-27 17:56:03.320 INFO  (qtp1690716179-16) [   x:ldcc] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=ldcc&action=CREATE&instanceDir=ldcc&wt=json} status=400 QTime=373
+2019-07-27 17:56:47.303 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1010856212
+2019-07-27 17:56:47.303 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.node
+2019-07-27 17:56:47.303 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.jvm
+2019-07-27 17:56:47.303 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.jetty

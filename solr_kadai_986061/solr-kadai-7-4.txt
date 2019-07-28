@@ -1,0 +1,1 @@
+http://localhost:8983/solr/ldcc/select?indent=on&q=jour_text:iphone%20AND%20jour_date:[2011-10-01T00:00:00Z%20TO%202011-10-31T23:59:59Z]&rows=100&sort=jour_date%20asc&start=0&wt=json

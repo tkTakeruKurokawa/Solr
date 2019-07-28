@@ -1,0 +1,37 @@
+{
+"replace-field" : {
+	"name":"id",
+	"type":"string",
+	"indexed":"true",
+	"stored":"true",
+	"required":"true"
+},
+"add-field" : {
+	"name":"jour_date",
+	"type":"date",
+	"indexed":"true",
+	"stored":"true",
+	"required":"false"
+},
+"add-field" : {
+	"name":"jour_title",
+	"type":"text_ja",
+	"indexed":"true",
+	"stored":"true",
+	"required":"false"
+},
+"add-field" : {
+	"name":"jour_text",
+	"type":"text_ja",
+	"indexed":"true",
+	"stored":"true",
+	"required":"false"
+},
+"add-field" : {
+	"name":"jour_category",
+	"type":"string",
+	"indexed":"false",
+	"stored":"true",
+	"required":"false"
+}
+}
