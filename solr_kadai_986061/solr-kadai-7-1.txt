@@ -1,0 +1,1 @@
+http://localhost:8983/solr/ldcc/select?indent=on&q=jour_title:iphone%20AND%20jour_text:セキュリティ&rows=10&start=0&wt=json

@@ -1,0 +1,1 @@
+http://localhost:8983/solr/ldcc/select?group.field=jour_category&group=true&indent=on&q=jour_text:iphone&rows=10&start=0&wt=json

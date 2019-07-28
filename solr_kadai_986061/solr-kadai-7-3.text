@@ -1,0 +1,1 @@
+http://localhost:8983/solr/ldcc/select?hl.fl=jour_title%20AND%20jour_text&hl.simple.post=%3C/em%3E&hl.simple.pre=%3Cem%3E&hl=on&indent=on&q=jour_text:iphone&rows=15&start=0&wt=json
